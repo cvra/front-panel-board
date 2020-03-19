@@ -1,4 +1,626 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Front Panel Board"
+Date "2020-03-15"
+Rev "v1"
+Comp "CVRA"
+Comment1 "Author: Antoine Albertelli"
+Comment2 "CC-BY 4.0"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR?
+U 1 1 5E6E2C63
+P 1700 1550
+F 0 "#PWR?" H 1700 1300 50  0001 C CNN
+F 1 "GND" H 1705 1377 50  0000 C CNN
+F 2 "" H 1700 1550 50  0001 C CNN
+F 3 "" H 1700 1550 50  0001 C CNN
+	1    1700 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1250 1700 1250
+Wire Wire Line
+	1700 1250 1700 1350
+Wire Wire Line
+	1850 1350 1700 1350
+Connection ~ 1700 1350
+Wire Wire Line
+	1700 1350 1700 1450
+Wire Wire Line
+	1850 1450 1700 1450
+Connection ~ 1700 1450
+Wire Wire Line
+	1700 1450 1700 1550
+$Comp
+L cvra:MICRO_USB CONN?
+U 1 1 5E6E25E4
+P 2200 1200
+F 0 "CONN?" H 2478 1253 60  0000 L CNN
+F 1 "MICRO_USB" H 2478 1147 60  0000 L CNN
+F 2 "" H 2200 1200 60  0000 C CNN
+F 3 "" H 2200 1200 60  0000 C CNN
+	1    2200 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 950  1850 950 
+Wire Wire Line
+	1300 1050 1850 1050
+Wire Wire Line
+	1300 1150 1850 1150
+$Comp
+L power:GND #PWR?
+U 1 1 5E6E4FAF
+P 1350 1350
+F 0 "#PWR?" H 1350 1100 50  0001 C CNN
+F 1 "GND" H 1355 1177 50  0000 C CNN
+F 2 "" H 1350 1350 50  0001 C CNN
+F 3 "" H 1350 1350 50  0001 C CNN
+	1    1350 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5E6E34A0
+P 1100 1050
+F 0 "J?" H 1018 1367 50  0000 C CNN
+F 1 "Conn_01x04" H 1018 1276 50  0000 C CNN
+F 2 "" H 1100 1050 50  0001 C CNN
+F 3 "~" H 1100 1050 50  0001 C CNN
+	1    1100 1050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 1250 1350 1250
+Wire Wire Line
+	1350 1250 1350 1350
+Text Notes 850  1700 0    50   ~ 0
+Picoblade 4 pin\n
+$Comp
+L cvra:SWD_DEBUG CONN?
+U 1 1 5E6E9475
+P 1150 2800
+F 0 "CONN?" H 992 3365 50  0000 C CNN
+F 1 "SWD_DEBUG" H 992 3274 50  0000 C CNN
+F 2 "MODULE" H 1150 2750 50  0001 C CNN
+F 3 "DOCUMENTATION" H 1150 2750 50  0001 C CNN
+	1    1150 2800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 2900 2100 2900
+Wire Wire Line
+	1500 2800 2100 2800
+Wire Wire Line
+	1500 2700 2100 2700
+Wire Wire Line
+	1500 2600 2100 2600
+Wire Wire Line
+	1500 2500 2100 2500
+Wire Wire Line
+	2100 3000 2100 2950
+Wire Wire Line
+	2100 2950 1500 2950
+Wire Wire Line
+	1500 2950 1500 3000
+Wire Wire Line
+	1500 3100 2100 3100
+$Comp
+L cvra:CAN CONN?
+U 1 1 5E6EE1D9
+P 1150 4100
+F 0 "CONN?" H 992 3635 50  0000 C CNN
+F 1 "CAN" H 992 3726 50  0000 C CNN
+F 2 "MODULE" H 1400 4100 50  0001 C CNN
+F 3 "DOCUMENTATION" H 1400 4100 50  0001 C CNN
+	1    1150 4100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2100 4250 1500 4250
+Wire Wire Line
+	1500 4150 2100 4150
+Wire Wire Line
+	2100 4050 1500 4050
+Wire Wire Line
+	1500 3950 2100 3950
+$Comp
+L cvra:CAN CONN?
+U 1 1 5E6ED864
+P 2450 4100
+F 0 "CONN?" H 2628 4146 50  0000 L CNN
+F 1 "CAN" H 2628 4055 50  0000 L CNN
+F 2 "MODULE" H 2700 4100 50  0001 C CNN
+F 3 "DOCUMENTATION" H 2700 4100 50  0001 C CNN
+	1    2450 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5E6F17D8
+P 9400 1100
+F 0 "D?" H 9393 845 50  0000 C CNN
+F 1 "LED_GREEN" H 9393 936 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9400 1100 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Lite-On%20PDFs/LTST-S270GKT.pdf" H 9400 1100 50  0001 C CNN
+F 4 "160-1475-1-ND" H 9400 1100 50  0001 C CNN "digikey#"
+	1    9400 1100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9550 1100 9700 1100
+$Comp
+L Device:LED D?
+U 1 1 5E6F374E
+P 9400 1600
+F 0 "D?" H 9393 1345 50  0000 C CNN
+F 1 "LED_BLUE" H 9393 1436 50  0000 C CNN
+F 2 "" H 9400 1600 50  0001 C CNN
+F 3 "~" H 9400 1600 50  0001 C CNN
+F 4 "1830-1029-1-ND" H 9400 1600 50  0001 C CNN "digikey#"
+	1    9400 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E6F228A
+P 9850 1100
+F 0 "R?" V 9643 1100 50  0000 C CNN
+F 1 "56R" V 9734 1100 50  0000 C CNN
+F 2 "" V 9780 1100 50  0001 C CNN
+F 3 "~" H 9850 1100 50  0001 C CNN
+	1    9850 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E6F5A78
+P 9850 1600
+F 0 "R?" V 9643 1600 50  0000 C CNN
+F 1 "56R" V 9734 1600 50  0000 C CNN
+F 2 "" V 9780 1600 50  0001 C CNN
+F 3 "~" H 9850 1600 50  0001 C CNN
+	1    9850 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9550 1600 9700 1600
+$Comp
+L Device:LED D?
+U 1 1 5E6F63B6
+P 9400 2100
+F 0 "D?" H 9393 1845 50  0000 C CNN
+F 1 "LED_RED" H 9393 1936 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9400 2100 50  0001 C CNN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS22-2000-210/LTST-S270KRKT.pdf" H 9400 2100 50  0001 C CNN
+F 4 "160-1479-1-ND" H 9400 2100 50  0001 C CNN "digikey#"
+	1    9400 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5E6F885C
+P 9400 2550
+F 0 "D?" H 9393 2295 50  0000 C CNN
+F 1 "LED_ORANGE" H 9393 2386 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9400 2550 50  0001 C CNN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS22-2000-209/LTST-S270KFKT.pdf" H 9400 2550 50  0001 C CNN
+F 4 "160-1477-1-ND" H 9400 2550 50  0001 C CNN "digikey#"
+	1    9400 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E6FC4E3
+P 9850 2100
+F 0 "R?" V 9643 2100 50  0000 C CNN
+F 1 "300R" V 9734 2100 50  0000 C CNN
+F 2 "" V 9780 2100 50  0001 C CNN
+F 3 "~" H 9850 2100 50  0001 C CNN
+	1    9850 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9550 2100 9700 2100
+$Comp
+L Device:R R?
+U 1 1 5E6FDAAD
+P 9850 2550
+F 0 "R?" V 9643 2550 50  0000 C CNN
+F 1 "300R" V 9734 2550 50  0000 C CNN
+F 2 "" V 9780 2550 50  0001 C CNN
+F 3 "~" H 9850 2550 50  0001 C CNN
+	1    9850 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9550 2550 9700 2550
+$Comp
+L Device:LED D?
+U 1 1 5E7020A5
+P 9400 3000
+F 0 "D?" H 9393 2745 50  0000 C CNN
+F 1 "LED_ORANGE" H 9393 2836 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9400 3000 50  0001 C CNN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS22-2000-209/LTST-S270KFKT.pdf" H 9400 3000 50  0001 C CNN
+F 4 "160-1477-1-ND" H 9400 3000 50  0001 C CNN "digikey#"
+	1    9400 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E7020AF
+P 9850 3000
+F 0 "R?" V 9643 3000 50  0000 C CNN
+F 1 "300R" V 9734 3000 50  0000 C CNN
+F 2 "" V 9780 3000 50  0001 C CNN
+F 3 "~" H 9850 3000 50  0001 C CNN
+	1    9850 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9550 3000 9700 3000
+$Comp
+L Device:LED D?
+U 1 1 5E703105
+P 9400 3500
+F 0 "D?" H 9393 3245 50  0000 C CNN
+F 1 "LED_ORANGE" H 9393 3336 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9400 3500 50  0001 C CNN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS22-2000-209/LTST-S270KFKT.pdf" H 9400 3500 50  0001 C CNN
+F 4 "160-1477-1-ND" H 9400 3500 50  0001 C CNN "digikey#"
+	1    9400 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E70310F
+P 9850 3500
+F 0 "R?" V 9643 3500 50  0000 C CNN
+F 1 "300R" V 9734 3500 50  0000 C CNN
+F 2 "" V 9780 3500 50  0001 C CNN
+F 3 "~" H 9850 3500 50  0001 C CNN
+	1    9850 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9550 3500 9700 3500
+$Comp
+L power:GND #PWR?
+U 1 1 5E70534A
+P 10100 3700
+F 0 "#PWR?" H 10100 3450 50  0001 C CNN
+F 1 "GND" H 10105 3527 50  0000 C CNN
+F 2 "" H 10100 3700 50  0001 C CNN
+F 3 "" H 10100 3700 50  0001 C CNN
+	1    10100 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 3700 10100 3500
+Wire Wire Line
+	10100 1100 10000 1100
+Wire Wire Line
+	10000 1600 10100 1600
+Connection ~ 10100 1600
+Wire Wire Line
+	10100 1600 10100 1100
+Wire Wire Line
+	10000 2100 10100 2100
+Connection ~ 10100 2100
+Wire Wire Line
+	10100 2100 10100 1600
+Wire Wire Line
+	10000 2550 10100 2550
+Connection ~ 10100 2550
+Wire Wire Line
+	10100 2550 10100 2100
+Wire Wire Line
+	10000 3000 10100 3000
+Connection ~ 10100 3000
+Wire Wire Line
+	10100 3000 10100 2550
+Wire Wire Line
+	10000 3500 10100 3500
+Connection ~ 10100 3500
+Wire Wire Line
+	10100 3500 10100 3000
+Text Label 9050 1100 2    50   ~ 0
+LED_READY
+Wire Wire Line
+	9050 1100 9250 1100
+Text Label 9050 1600 2    50   ~ 0
+LED_DEBUG
+Text Label 9050 2100 2    50   ~ 0
+LED_ERROR
+Text Label 9050 2550 2    50   ~ 0
+LED_BUS
+Text Label 9050 3000 2    50   ~ 0
+LED_COMM
+Text Label 9050 3500 2    50   ~ 0
+LED_POWER
+Wire Wire Line
+	9050 3500 9250 3500
+Wire Wire Line
+	9250 3000 9050 3000
+Wire Wire Line
+	9050 2550 9250 2550
+Wire Wire Line
+	9250 2100 9050 2100
+Wire Wire Line
+	9050 1600 9250 1600
+$Comp
+L Connector_Generic:Conn_01x11 J?
+U 1 1 5E71619D
+P 1100 5300
+F 0 "J?" H 1018 6017 50  0000 C CNN
+F 1 "Conn_01x11" H 1018 5926 50  0000 C CNN
+F 2 "" H 1100 5300 50  0001 C CNN
+F 3 "~" H 1100 5300 50  0001 C CNN
+	1    1100 5300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E71ACFD
+P 1500 4750
+F 0 "#PWR?" H 1500 4600 50  0001 C CNN
+F 1 "+5V" H 1515 4923 50  0000 C CNN
+F 2 "" H 1500 4750 50  0001 C CNN
+F 3 "" H 1500 4750 50  0001 C CNN
+	1    1500 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 4800 1500 4800
+Wire Wire Line
+	1500 4800 1500 4750
+$Comp
+L power:GND #PWR?
+U 1 1 5E71C482
+P 1750 4700
+F 0 "#PWR?" H 1750 4450 50  0001 C CNN
+F 1 "GND" H 1755 4527 50  0000 C CNN
+F 2 "" H 1750 4700 50  0001 C CNN
+F 3 "" H 1750 4700 50  0001 C CNN
+	1    1750 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 4700 1600 4700
+Wire Wire Line
+	1600 4700 1600 4900
+Wire Wire Line
+	1600 4900 1300 4900
+Text Label 1550 5000 0    50   ~ 0
+LED_READY
+Text Label 1550 5100 0    50   ~ 0
+LED_DEBUG
+Text Label 1550 5200 0    50   ~ 0
+LED_ERROR
+Text Label 1550 5300 0    50   ~ 0
+LED_POWER
+Text Label 1550 5400 0    50   ~ 0
+LED_COMM
+Text Label 1550 5500 0    50   ~ 0
+LED_BUS
+Text Label 1550 5600 0    50   ~ 0
+BUTTON_TEAM1
+Text Label 1550 5700 0    50   ~ 0
+BUTTON_TEAM2
+Text Label 1550 5800 0    50   ~ 0
+BUTTON_START
+Wire Wire Line
+	1300 5000 1550 5000
+Wire Wire Line
+	1300 5100 1550 5100
+Wire Wire Line
+	1300 5200 1550 5200
+Wire Wire Line
+	1300 5300 1550 5300
+Wire Wire Line
+	1300 5400 1550 5400
+Wire Wire Line
+	1300 5500 1550 5500
+Wire Wire Line
+	1300 5600 1550 5600
+Wire Wire Line
+	1300 5700 1550 5700
+Wire Wire Line
+	1300 5800 1550 5800
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5E72BE47
+P 9850 4950
+F 0 "J?" H 9930 4992 50  0000 L CNN
+F 1 "Conn_01x03" H 9930 4901 50  0000 L CNN
+F 2 "" H 9850 4950 50  0001 C CNN
+F 3 "~" H 9850 4950 50  0001 C CNN
+	1    9850 4950
+	1    0    0    -1  
+$EndComp
+Text Notes 9200 4550 0    50   ~ 0
+TODO: Check if 5V is ok for our hall sensor
+$Comp
+L power:+5V #PWR?
+U 1 1 5E72CF47
+P 9600 4800
+F 0 "#PWR?" H 9600 4650 50  0001 C CNN
+F 1 "+5V" H 9615 4973 50  0000 C CNN
+F 2 "" H 9600 4800 50  0001 C CNN
+F 3 "" H 9600 4800 50  0001 C CNN
+	1    9600 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 4850 9600 4850
+Wire Wire Line
+	9600 4850 9600 4800
+$Comp
+L power:GND #PWR?
+U 1 1 5E72F30D
+P 9600 5100
+F 0 "#PWR?" H 9600 4850 50  0001 C CNN
+F 1 "GND" H 9605 4927 50  0000 C CNN
+F 2 "" H 9600 5100 50  0001 C CNN
+F 3 "" H 9600 5100 50  0001 C CNN
+	1    9600 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 5050 9600 5050
+Wire Wire Line
+	9600 5050 9600 5100
+Text Label 9500 4950 2    50   ~ 0
+BUTTON_START
+Wire Wire Line
+	9500 4950 9650 4950
+$Comp
+L Connector:RJ45 J?
+U 1 1 5E73F4DC
+P 1900 6750
+F 0 "J?" H 1570 6754 50  0000 R CNN
+F 1 "RJ45" H 1570 6845 50  0000 R CNN
+F 2 "" V 1900 6775 50  0001 C CNN
+F 3 "~" V 1900 6775 50  0001 C CNN
+	1    1900 6750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J?
+U 1 1 5E7428B5
+P 1050 6750
+F 0 "J?" H 968 7267 50  0000 C CNN
+F 1 "Conn_01x08" H 968 7176 50  0000 C CNN
+F 2 "" H 1050 6750 50  0001 C CNN
+F 3 "~" H 1050 6750 50  0001 C CNN
+	1    1050 6750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 6450 1500 6450
+Wire Wire Line
+	1250 6550 1500 6550
+Wire Wire Line
+	1500 6650 1250 6650
+Wire Wire Line
+	1250 6750 1500 6750
+Wire Wire Line
+	1500 6850 1250 6850
+Wire Wire Line
+	1250 6950 1500 6950
+Wire Wire Line
+	1500 7050 1250 7050
+Wire Wire Line
+	1250 7150 1500 7150
+$Comp
+L Connector_Generic:Conn_01x07 J?
+U 1 1 5E75544E
+P 2300 2800
+F 0 "J?" H 2380 2842 50  0000 L CNN
+F 1 "Conn_01x07" H 2380 2751 50  0000 L CNN
+F 2 "" H 2300 2800 50  0001 C CNN
+F 3 "~" H 2300 2800 50  0001 C CNN
+	1    2300 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_SPDT SW?
+U 1 1 5E7575A2
+P 5700 3100
+F 0 "SW?" H 5700 3385 50  0000 C CNN
+F 1 "CFPA-1FB4-A2T" H 5700 3294 50  0000 C CNN
+F 2 "" H 5700 3100 50  0001 C CNN
+F 3 "https://www.nidec-copal-electronics.com/e/catalog/switch/cfpa.pdf" H 5700 3100 50  0001 C CNN
+F 4 "563-1246-1-ND" H 5700 3100 50  0001 C CNN "digikey#"
+F 5 "" H 5700 3100 50  0001 C CNN "Field5"
+	1    5700 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial BC?
+U 1 1 5E75D315
+P 6550 3050
+F 0 "BC?" H 6635 3096 50  0000 L CNN
+F 1 "Button Cap, Black" H 6635 3005 50  0000 L CNN
+F 2 "" H 6550 3050 50  0001 C CNN
+F 3 "~" H 6550 3050 50  0001 C CNN
+F 4 "563-1179-ND" H 6550 3050 50  0001 C CNN "digikey#"
+	1    6550 3050
+	1    0    0    -1  
+$EndComp
+Text Notes 5550 2700 0    50   ~ 0
+Normal: 2-3\nPressed: 2-1
+Text Label 5350 3100 2    50   ~ 0
+BUTTON_TEAM1
+Wire Wire Line
+	5350 3100 5500 3100
+$Comp
+L power:GND #PWR?
+U 1 1 5E761EC6
+P 6050 3300
+F 0 "#PWR?" H 6050 3050 50  0001 C CNN
+F 1 "GND" H 6055 3127 50  0000 C CNN
+F 2 "" H 6050 3300 50  0001 C CNN
+F 3 "" H 6050 3300 50  0001 C CNN
+	1    6050 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3000 6050 3000
+Wire Wire Line
+	6050 3000 6050 3300
+NoConn ~ 5900 3200
+$Comp
+L Switch:SW_Push_SPDT SW?
+U 1 1 5E771084
+P 5700 3950
+F 0 "SW?" H 5700 4235 50  0000 C CNN
+F 1 "CFPA-1FB4-A2T" H 5700 4144 50  0000 C CNN
+F 2 "" H 5700 3950 50  0001 C CNN
+F 3 "https://www.nidec-copal-electronics.com/e/catalog/switch/cfpa.pdf" H 5700 3950 50  0001 C CNN
+F 4 "563-1246-1-ND" H 5700 3950 50  0001 C CNN "digikey#"
+F 5 "" H 5700 3950 50  0001 C CNN "Field5"
+	1    5700 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial BC?
+U 1 1 5E77108F
+P 6550 3900
+F 0 "BC?" H 6635 3946 50  0000 L CNN
+F 1 "Button Cap, Black" H 6635 3855 50  0000 L CNN
+F 2 "" H 6550 3900 50  0001 C CNN
+F 3 "~" H 6550 3900 50  0001 C CNN
+F 4 "563-1179-ND" H 6550 3900 50  0001 C CNN "digikey#"
+	1    6550 3900
+	1    0    0    -1  
+$EndComp
+Text Label 5350 3950 2    50   ~ 0
+BUTTON_TEAM2
+Wire Wire Line
+	5350 3950 5500 3950
+$Comp
+L power:GND #PWR?
+U 1 1 5E77109B
+P 6050 4150
+F 0 "#PWR?" H 6050 3900 50  0001 C CNN
+F 1 "GND" H 6055 3977 50  0000 C CNN
+F 2 "" H 6050 4150 50  0001 C CNN
+F 3 "" H 6050 4150 50  0001 C CNN
+	1    6050 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3850 6050 3850
+Wire Wire Line
+	6050 3850 6050 4150
+NoConn ~ 5900 4050
 $EndSCHEMATC
