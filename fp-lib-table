@@ -1,0 +1,8 @@
+(fp_lib_table
+  (lib (name cvracon)(type KiCad)(uri ${KIPRJMOD}/kicad-lib/footprints/_connectors.pretty)(options "")(descr ""))
+  (lib (name cvralogo)(type KiCad)(uri ${KIPRJMOD}/kicad-lib/footprints/_logo.pretty)(options "")(descr ""))
+  (lib (name _leds_rgb)(type KiCad)(uri ${KIPRJMOD}/kicad-lib/footprints/_led_rgb.pretty)(options "")(descr ""))
+  (lib (name _switches)(type KiCad)(uri ${KIPRJMOD}/kicad-lib/footprints/_switches.pretty)(options "")(descr ""))
+  (lib (name _led_rgb)(type KiCad)(uri ${KIPRJMOD}/kicad-lib/footprints/_led_rgb.pretty)(options "")(descr ""))
+  (lib (name _connectors)(type KiCad)(uri ${KIPRJMOD}/kicad-lib/footprints/_connectors.pretty)(options "")(descr ""))
+)

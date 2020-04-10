@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name cvracon)(type Legacy)(uri ${KIPRJMOD}/kicad-lib/components/_connectors.lib)(options "")(descr ""))
+  (lib (name led_rgb)(type Legacy)(uri ${KIPRJMOD}/kicad-lib/components/led_rgb.lib)(options "")(descr ""))
+  (lib (name cvra)(type Legacy)(uri ${KIPRJMOD}/kicad-lib/components/cvra.lib)(options "")(descr ""))
+)
