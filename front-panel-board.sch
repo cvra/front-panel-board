@@ -95,6 +95,7 @@ F 0 "R1" V 9643 1100 50  0000 C CNN
 F 1 "56R" V 9734 1100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9780 1100 50  0001 C CNN
 F 3 "~" H 9850 1100 50  0001 C CNN
+F 4 "311-56.0HRCT-ND" V 9850 1100 50  0001 C CNN "digikey#"
 	1    9850 1100
 	0    1    1    0   
 $EndComp
@@ -128,10 +129,9 @@ L Device:LED D4
 U 1 1 5E6F885C
 P 9400 2550
 F 0 "D4" H 9393 2295 50  0000 C CNN
-F 1 "LED_ORANGE" H 9393 2386 50  0000 C CNN
+F 1 "LED_RED" H 9393 2386 50  0000 C CNN
 F 2 "_LED_SMD:LED_0603_RightAngle" H 9400 2550 50  0001 C CNN
 F 3 "http://optoelectronics.liteon.com/upload/download/DS22-2000-209/LTST-S270KFKT.pdf" H 9400 2550 50  0001 C CNN
-F 4 "160-1477-1-ND" H 9400 2550 50  0001 C CNN "digikey#"
 	1    9400 2550
 	-1   0    0    1   
 $EndComp
@@ -143,6 +143,7 @@ F 0 "R3" V 9643 2100 50  0000 C CNN
 F 1 "300R" V 9734 2100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9780 2100 50  0001 C CNN
 F 3 "~" H 9850 2100 50  0001 C CNN
+F 4 "311-300HRCT-ND" V 9850 2100 50  0001 C CNN "digikey#"
 	1    9850 2100
 	0    1    1    0   
 $EndComp
@@ -166,10 +167,9 @@ L Device:LED D5
 U 1 1 5E7020A5
 P 9400 3000
 F 0 "D5" H 9393 2745 50  0000 C CNN
-F 1 "LED_ORANGE" H 9393 2836 50  0000 C CNN
+F 1 "LED_RED" H 9393 2836 50  0000 C CNN
 F 2 "_LED_SMD:LED_0603_RightAngle" H 9400 3000 50  0001 C CNN
 F 3 "http://optoelectronics.liteon.com/upload/download/DS22-2000-209/LTST-S270KFKT.pdf" H 9400 3000 50  0001 C CNN
-F 4 "160-1477-1-ND" H 9400 3000 50  0001 C CNN "digikey#"
 	1    9400 3000
 	-1   0    0    1   
 $EndComp
@@ -296,6 +296,7 @@ F 0 "J7" H 8180 5792 50  0000 L CNN
 F 1 "Conn_01x03" H 8180 5701 50  0000 L CNN
 F 2 "Connector_Molex:Molex_PicoBlade_53261-0371_1x03-1MP_P1.25mm_Horizontal" H 8100 5750 50  0001 C CNN
 F 3 "~" H 8100 5750 50  0001 C CNN
+F 4 "WM7621CT-ND" H 8100 5750 50  0001 C CNN "digikey#"
 	1    8100 5750
 	1    0    0    -1  
 $EndComp
@@ -600,6 +601,7 @@ F 0 "H1" H 5900 6896 50  0000 L CNN
 F 1 "M2" H 5900 6805 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.2mm_M2_ISO14580" H 5800 6850 50  0001 C CNN
 F 3 "~" H 5800 6850 50  0001 C CNN
+F 4 "1" H 5800 6850 50  0001 C CNN "DNP"
 	1    5800 6850
 	1    0    0    -1  
 $EndComp
@@ -611,6 +613,7 @@ F 0 "H2" H 5900 7146 50  0000 L CNN
 F 1 "M2" H 5900 7055 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.2mm_M2_ISO14580" H 5800 7100 50  0001 C CNN
 F 3 "~" H 5800 7100 50  0001 C CNN
+F 4 "1" H 5800 7100 50  0001 C CNN "DNP"
 	1    5800 7100
 	1    0    0    -1  
 $EndComp
@@ -682,6 +685,7 @@ F 0 "R7" V 9643 3850 50  0000 C CNN
 F 1 "130R" V 9734 3850 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9780 3850 50  0001 C CNN
 F 3 "~" H 9850 3850 50  0001 C CNN
+F 4 "311-130HRCT-ND" V 9850 3850 50  0001 C CNN "digikey#"
 	1    9850 3850
 	0    1    1    0   
 $EndComp
@@ -693,6 +697,7 @@ F 0 "R8" V 9965 4050 50  0000 C CNN
 F 1 "30R" V 10056 4050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9780 4050 50  0001 C CNN
 F 3 "~" H 9850 4050 50  0001 C CNN
+F 4 "311-30.0HRCT-ND" V 9850 4050 50  0001 C CNN "digikey#"
 	1    9850 4050
 	0    1    1    0   
 $EndComp
@@ -790,15 +795,12 @@ L Device:LED D6
 U 1 1 5E703105
 P 9400 3500
 F 0 "D6" H 9393 3245 50  0000 C CNN
-F 1 "LED_ORANGE" H 9393 3336 50  0000 C CNN
+F 1 "LED_RED" H 9393 3336 50  0000 C CNN
 F 2 "_LED_SMD:LED_0603_RightAngle" H 9400 3500 50  0001 C CNN
 F 3 "http://optoelectronics.liteon.com/upload/download/DS22-2000-209/LTST-S270KFKT.pdf" H 9400 3500 50  0001 C CNN
-F 4 "160-1477-1-ND" H 9400 3500 50  0001 C CNN "digikey#"
 	1    9400 3500
 	-1   0    0    1   
 $EndComp
-Text Notes 8500 4850 1    50   ~ 0
-TODO: Vérifier pinout et sens des diodes
 $Comp
 L Connector_Generic:Conn_01x04 J11
 U 1 1 5E9084A6
@@ -861,6 +863,7 @@ F 0 "J1" H 1018 1567 50  0000 C CNN
 F 1 "Conn_01x05" H 1018 1476 50  0000 C CNN
 F 2 "Connector_Molex:Molex_PicoBlade_53261-0571_1x05-1MP_P1.25mm_Horizontal" H 1100 1150 50  0001 C CNN
 F 3 "~" H 1100 1150 50  0001 C CNN
+F 4 "WM7623CT-ND" H 1100 1150 50  0001 C CNN "digikey#"
 	1    1100 1150
 	-1   0    0    -1  
 $EndComp
