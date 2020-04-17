@@ -1,6 +1,7 @@
 # Front Panel PCB
 
 ![CAD view of the board](front-panel-board.png)
+![Board dimensions](board-dimensions.png)
 
 This small PCB is used to expose debug and HMI signals from inside the robot to
 the external world through a front panel. The main goal is to simplify the
