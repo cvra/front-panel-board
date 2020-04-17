@@ -377,14 +377,14 @@ Wire Wire Line
 $Comp
 L Switch:SW_Push_SPDT SW1
 U 1 1 5E7575A2
-P 5700 3100
-F 0 "SW1" H 5700 3385 50  0000 C CNN
-F 1 "CFPA-1FB4-A2T" H 5700 3294 50  0000 C CNN
-F 2 "_switches:CFPA-1FB4-A2T" H 5700 3100 50  0001 C CNN
-F 3 "https://www.nidec-copal-electronics.com/e/catalog/switch/cfpa.pdf" H 5700 3100 50  0001 C CNN
-F 4 "563-1246-1-ND" H 5700 3100 50  0001 C CNN "digikey#"
-F 5 "" H 5700 3100 50  0001 C CNN "Field5"
-	1    5700 3100
+P 7100 3100
+F 0 "SW1" H 7100 3385 50  0000 C CNN
+F 1 "CFPA-1FB4-A2T" H 7100 3294 50  0000 C CNN
+F 2 "_switches:CFPA-1FB4-A2T" H 7100 3100 50  0001 C CNN
+F 3 "https://www.nidec-copal-electronics.com/e/catalog/switch/cfpa.pdf" H 7100 3100 50  0001 C CNN
+F 4 "563-1246-1-ND" H 7100 3100 50  0001 C CNN "digikey#"
+F 5 "" H 7100 3100 50  0001 C CNN "Field5"
+	1    7100 3100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -399,37 +399,37 @@ F 4 "563-1179-ND" H 4850 6800 50  0001 C CNN "digikey#"
 	1    4850 6800
 	1    0    0    -1  
 $EndComp
-Text Notes 5550 2700 0    50   ~ 0
+Text Notes 6950 2700 0    50   ~ 0
 Normal: 2-3\nPressed: 2-1
-Text Label 5350 3100 2    50   ~ 0
+Text Label 6750 3100 2    50   ~ 0
 BUTTON_TEAM2
 $Comp
 L power:GND #PWR05
 U 1 1 5E761EC6
-P 6050 3300
-F 0 "#PWR05" H 6050 3050 50  0001 C CNN
-F 1 "GND" H 6055 3127 50  0000 C CNN
-F 2 "" H 6050 3300 50  0001 C CNN
-F 3 "" H 6050 3300 50  0001 C CNN
-	1    6050 3300
+P 7450 3300
+F 0 "#PWR05" H 7450 3050 50  0001 C CNN
+F 1 "GND" H 7455 3127 50  0000 C CNN
+F 2 "" H 7450 3300 50  0001 C CNN
+F 3 "" H 7450 3300 50  0001 C CNN
+	1    7450 3300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5900 3000 6050 3000
+	7300 3000 7450 3000
 Wire Wire Line
-	6050 3000 6050 3300
-NoConn ~ 5900 3200
+	7450 3000 7450 3300
+NoConn ~ 7300 3200
 $Comp
 L Switch:SW_Push_SPDT SW2
 U 1 1 5E771084
-P 5700 3950
-F 0 "SW2" H 5700 4235 50  0000 C CNN
-F 1 "CFPA-1FB4-A2T" H 5700 4144 50  0000 C CNN
-F 2 "_switches:CFPA-1FB4-A2T" H 5700 3950 50  0001 C CNN
-F 3 "https://www.nidec-copal-electronics.com/e/catalog/switch/cfpa.pdf" H 5700 3950 50  0001 C CNN
-F 4 "563-1246-1-ND" H 5700 3950 50  0001 C CNN "digikey#"
-F 5 "" H 5700 3950 50  0001 C CNN "Field5"
-	1    5700 3950
+P 7100 3950
+F 0 "SW2" H 7100 4235 50  0000 C CNN
+F 1 "CFPA-1FB4-A2T" H 7100 4144 50  0000 C CNN
+F 2 "_switches:CFPA-1FB4-A2T" H 7100 3950 50  0001 C CNN
+F 3 "https://www.nidec-copal-electronics.com/e/catalog/switch/cfpa.pdf" H 7100 3950 50  0001 C CNN
+F 4 "563-1246-1-ND" H 7100 3950 50  0001 C CNN "digikey#"
+F 5 "" H 7100 3950 50  0001 C CNN "Field5"
+	1    7100 3950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -444,24 +444,24 @@ F 4 "563-1179-ND" H 4850 7100 50  0001 C CNN "digikey#"
 	1    4850 7100
 	1    0    0    -1  
 $EndComp
-Text Label 5350 3950 2    50   ~ 0
+Text Label 6750 3950 2    50   ~ 0
 BUTTON_TEAM1
 $Comp
 L power:GND #PWR07
 U 1 1 5E77109B
-P 6050 4150
-F 0 "#PWR07" H 6050 3900 50  0001 C CNN
-F 1 "GND" H 6055 3977 50  0000 C CNN
-F 2 "" H 6050 4150 50  0001 C CNN
-F 3 "" H 6050 4150 50  0001 C CNN
-	1    6050 4150
+P 7450 4150
+F 0 "#PWR07" H 7450 3900 50  0001 C CNN
+F 1 "GND" H 7455 3977 50  0000 C CNN
+F 2 "" H 7450 4150 50  0001 C CNN
+F 3 "" H 7450 4150 50  0001 C CNN
+	1    7450 4150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5900 3850 6050 3850
+	7300 3850 7450 3850
 Wire Wire Line
-	6050 3850 6050 4150
-NoConn ~ 5900 4050
+	7450 3850 7450 4150
+NoConn ~ 7300 4050
 $Comp
 L Connector_Generic:Conn_01x04 J6
 U 1 1 5E783D8B
@@ -515,13 +515,13 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_02x04_Odd_Even J4
 U 1 1 5E7A15C0
-P 3200 2800
-F 0 "J4" H 3250 3117 50  0000 C CNN
-F 1 "0878330821" H 3250 3026 50  0000 C CNN
-F 2 "_connectors:0878330821_02x03_pin_header" H 3200 2800 50  0001 C CNN
-F 3 "~" H 3200 2800 50  0001 C CNN
-F 4 "WM23634-ND" H 3200 2800 50  0001 C CNN "digikey#"
-	1    3200 2800
+P 4150 3350
+F 0 "J4" H 4200 3667 50  0000 C CNN
+F 1 "0878330821" H 4200 3576 50  0000 C CNN
+F 2 "_connectors:0878330821_02x03_pin_header" H 4150 3350 50  0001 C CNN
+F 3 "~" H 4150 3350 50  0001 C CNN
+F 4 "WM23634-ND" H 4150 3350 50  0001 C CNN "digikey#"
+	1    4150 3350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -564,35 +564,35 @@ Wire Wire Line
 	1400 2950 1150 2950
 Wire Wire Line
 	1150 3050 1400 3050
-Text Label 2900 2700 2    50   ~ 0
+Text Label 3850 3250 2    50   ~ 0
 DEBUG_VCC
-Text Label 2900 2800 2    50   ~ 0
+Text Label 3850 3350 2    50   ~ 0
 DEBUG_GND
-NoConn ~ 3000 3000
-Text Label 3600 3000 0    50   ~ 0
+NoConn ~ 3950 3550
+Text Label 4550 3550 0    50   ~ 0
 DEBUG_NRST
-Text Label 3600 2700 0    50   ~ 0
+Text Label 4550 3250 0    50   ~ 0
 DEBUG_SWDIO
-Text Label 3600 2800 0    50   ~ 0
+Text Label 4550 3350 0    50   ~ 0
 DEBUG_SWCLK
-Text Label 2900 2900 2    50   ~ 0
+Text Label 3850 3450 2    50   ~ 0
 DEBUG_TX
-Text Label 3600 2900 0    50   ~ 0
+Text Label 4550 3450 0    50   ~ 0
 DEBUG_RX
 Wire Wire Line
-	2900 2700 3000 2700
+	3850 3250 3950 3250
 Wire Wire Line
-	2900 2800 3000 2800
+	3850 3350 3950 3350
 Wire Wire Line
-	2900 2900 3000 2900
+	3850 3450 3950 3450
 Wire Wire Line
-	3500 2700 3600 2700
+	4450 3250 4550 3250
 Wire Wire Line
-	3500 2800 3600 2800
+	4450 3350 4550 3350
 Wire Wire Line
-	3500 2900 3600 2900
+	4450 3450 4550 3450
 Wire Wire Line
-	3500 3000 3600 3000
+	4450 3550 4550 3550
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5E7E071F
@@ -875,9 +875,11 @@ Connection ~ 1350 1350
 Text Notes 850  1600 1    50   ~ 0
 5 pin to avoid having\nsame connector as CAN
 Wire Wire Line
-	5350 3100 5500 3100
+	6750 3100 6900 3100
 Wire Wire Line
-	5350 3950 5500 3950
+	6750 3950 6900 3950
 Text Label 1450 5150 0    50   ~ 0
 LED_COMM
+Text Notes 3900 3950 0    50   ~ 0
+Female side is done with\n1x Molex 0511100851\n8x Molex 0873968051
 $EndSCHEMATC
