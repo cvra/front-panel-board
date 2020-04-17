@@ -5,4 +5,6 @@
   (lib (name _switches)(type KiCad)(uri ${KIPRJMOD}/kicad-lib/footprints/_switches.pretty)(options "")(descr ""))
   (lib (name _led_rgb)(type KiCad)(uri ${KIPRJMOD}/kicad-lib/footprints/_led_rgb.pretty)(options "")(descr ""))
   (lib (name _connectors)(type KiCad)(uri ${KIPRJMOD}/kicad-lib/footprints/_connectors.pretty)(options "")(descr ""))
+  (lib (name _LED_SMD)(type KiCad)(uri ${KIPRJMOD}/kicad-lib/footprints/_LED_SMD.pretty)(options "")(descr ""))
+  (lib (name _mech)(type KiCad)(uri ${KIPRJMOD}/kicad-lib/footprints/_mech.pretty)(options "")(descr ""))
 )
